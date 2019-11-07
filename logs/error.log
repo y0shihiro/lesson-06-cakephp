@@ -1,0 +1,780 @@
+2019-11-05 21:24:18 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Hello.html could not be found. (/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:104)
+Exception Attributes: array (
+  'class' => 'Hello.html',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(89): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(37): Cake\Http\ControllerFactory->getControllerClass(Object(Cake\Http\ServerRequest))
+#2 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(234): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /usr/share/nginx/html/mycakeapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /usr/share/nginx/html/mycakeapp/webroot/index.php(40): Cake\Http\Server->run()
+#20 /usr/share/nginx/html/mycakeapp/index.php(16): require('/usr/share/ngin...')
+#21 {main}
+Request URL: /hello.html
+
+
+2019-11-05 21:25:42 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found. (/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:104)
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(234): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /usr/share/nginx/html/mycakeapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /usr/share/nginx/html/mycakeapp/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /webroot/hello.html
+
+
+2019-11-06 16:53:53 Error: [Cake\Http\Exception\InvalidCsrfTokenException] CSRF token mismatch. (/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:231)
+#0 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(151): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(121): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /usr/share/nginx/html/mycakeapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /usr/share/nginx/html/mycakeapp/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /mycakeapp/hello/form
+Referer URL: http://localhost:8080/hello
+
+
+2019-11-06 16:55:12 Error: [Cake\Http\Exception\InvalidCsrfTokenException] CSRF token mismatch. (/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:231)
+#0 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(151): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(121): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /usr/share/nginx/html/mycakeapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /usr/share/nginx/html/mycakeapp/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /mycakeapp/hello/form
+Referer URL: http://localhost:8080/hello
+
+
+2019-11-06 16:55:28 Error: [Cake\Http\Exception\InvalidCsrfTokenException] CSRF token mismatch. (/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:231)
+#0 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(151): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(121): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /usr/share/nginx/html/mycakeapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /usr/share/nginx/html/mycakeapp/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /mycakeapp/hello/form
+Referer URL: http://localhost:8080/hello
+
+
+2019-11-06 16:58:23 Error: [Cake\Http\Exception\InvalidCsrfTokenException] CSRF token mismatch. (/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:231)
+#0 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(151): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(121): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /usr/share/nginx/html/mycakeapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /usr/share/nginx/html/mycakeapp/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /mycakeapp/hello/form
+Referer URL: http://localhost:8080/hello
+
+
+2019-11-06 17:01:32 Error: [Cake\Http\Exception\InvalidCsrfTokenException] CSRF token mismatch. (/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:231)
+#0 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(151): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(121): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /usr/share/nginx/html/mycakeapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /usr/share/nginx/html/mycakeapp/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /mycakeapp/hello/form
+Referer URL: http://localhost:8080/hello
+
+
+2019-11-06 17:02:12 Error: [Cake\Http\Exception\InvalidCsrfTokenException] CSRF token mismatch. (/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:231)
+#0 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(151): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(121): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /usr/share/nginx/html/mycakeapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /usr/share/nginx/html/mycakeapp/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /mycakeapp/hello/form
+Referer URL: http://localhost:8080/hello
+
+
+2019-11-06 17:03:32 Warning: Warning (2): Declaration of App\Controller\HelloController::beforeFilter(App\Controller\Event $event) should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [/usr/share/nginx/html/mycakeapp/src/Controller/HelloController.php, line 6]
+Request URL: /hello
+Client IP: 10.0.2.2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 158
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 42
+include - APP/Controller/HelloController.php, line 6
+Composer\Autoload\includeFile - ROOT/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() - ROOT/vendor/composer/ClassLoader.php, line 322
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+Cake\Core\App::_classExistsInBase() - CORE/src/Core/App.php, line 151
+Cake\Core\App::className() - CORE/src/Core/App.php, line 63
+Cake\Http\ControllerFactory::getControllerClass() - CORE/src/Http/ControllerFactory.php, line 92
+Cake\Http\ControllerFactory::create() - CORE/src/Http/ControllerFactory.php, line 37
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 91
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 234
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE/src/Http/Middleware/CsrfProtectionMiddleware.php, line 123
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 168
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 96
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 97
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-11-06 17:03:32 Error: [TypeError] Argument 1 passed to App\Controller\HelloController::beforeFilter() must be an instance of App\Controller\Event, instance of Cake\Event\Event given, called in /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Event/EventManager.php on line 352 (/usr/share/nginx/html/mycakeapp/src/Controller/HelloController.php:34)
+#0 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Event/EventManager.php(352): App\Controller\HelloController->beforeFilter(Object(Cake\Event\Event))
+#1 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Event/EventManager.php(329): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#2 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(113): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#3 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Controller/Controller.php(676): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#4 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#5 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\HelloController))
+#6 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(234): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /usr/share/nginx/html/mycakeapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /usr/share/nginx/html/mycakeapp/webroot/index.php(40): Cake\Http\Server->run()
+#23 {main}
+Request URL: /hello
+
+
+2019-11-06 17:03:49 Warning: Warning (2): Declaration of App\Controller\HelloController::beforeFilter(App\Controller\Event $event) should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [/usr/share/nginx/html/mycakeapp/src/Controller/HelloController.php, line 6]
+Request URL: /hello
+Client IP: 10.0.2.2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 158
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 42
+include - APP/Controller/HelloController.php, line 6
+Composer\Autoload\includeFile - ROOT/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() - ROOT/vendor/composer/ClassLoader.php, line 322
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+Cake\Core\App::_classExistsInBase() - CORE/src/Core/App.php, line 151
+Cake\Core\App::className() - CORE/src/Core/App.php, line 63
+Cake\Http\ControllerFactory::getControllerClass() - CORE/src/Http/ControllerFactory.php, line 92
+Cake\Http\ControllerFactory::create() - CORE/src/Http/ControllerFactory.php, line 37
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 91
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 234
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE/src/Http/Middleware/CsrfProtectionMiddleware.php, line 123
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 168
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 96
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 97
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-11-06 17:03:49 Error: Fatal Error (1): Trait 'App\Controller\Cake\Event\Event' not found in [/usr/share/nginx/html/mycakeapp/src/Controller/HelloController.php, line 32]
+Request URL: /hello
+Client IP: 10.0.2.2
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 228
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 108
+[main] - [internal], line ??
+
+
+
+2019-11-06 17:03:49 Error: [Cake\Error\FatalErrorException] Trait 'App\Controller\Cake\Event\Event' not found in /usr/share/nginx/html/mycakeapp/src/Controller/HelloController.php on line 32
+Stack Trace:
+#0 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(108): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Trait 'App\\Cont...', '/usr/share/ngin...', 32)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+Request URL: /hello
+Client IP: 10.0.2.2
+2019-11-06 17:04:02 Warning: Warning (2): Declaration of App\Controller\HelloController::beforeFilter(App\Controller\Event $event) should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [/usr/share/nginx/html/mycakeapp/src/Controller/HelloController.php, line 7]
+Request URL: /hello
+Client IP: 10.0.2.2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 158
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 42
+include - APP/Controller/HelloController.php, line 7
+Composer\Autoload\includeFile - ROOT/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() - ROOT/vendor/composer/ClassLoader.php, line 322
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+Cake\Core\App::_classExistsInBase() - CORE/src/Core/App.php, line 151
+Cake\Core\App::className() - CORE/src/Core/App.php, line 63
+Cake\Http\ControllerFactory::getControllerClass() - CORE/src/Http/ControllerFactory.php, line 92
+Cake\Http\ControllerFactory::create() - CORE/src/Http/ControllerFactory.php, line 37
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 91
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 234
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE/src/Http/Middleware/CsrfProtectionMiddleware.php, line 123
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 168
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 96
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 97
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-11-06 17:04:03 Error: [TypeError] Argument 1 passed to App\Controller\HelloController::beforeFilter() must be an instance of App\Controller\Event, instance of Cake\Event\Event given, called in /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Event/EventManager.php on line 352 (/usr/share/nginx/html/mycakeapp/src/Controller/HelloController.php:33)
+#0 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Event/EventManager.php(352): App\Controller\HelloController->beforeFilter(Object(Cake\Event\Event))
+#1 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Event/EventManager.php(329): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#2 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(113): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#3 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Controller/Controller.php(676): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#4 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#5 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\HelloController))
+#6 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(234): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /usr/share/nginx/html/mycakeapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /usr/share/nginx/html/mycakeapp/webroot/index.php(40): Cake\Http\Server->run()
+#23 {main}
+Request URL: /hello
+
+
+2019-11-06 17:04:14 Warning: Warning (512): Unable to emit headers. Headers sent in file=/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=856 in [/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 51]
+Request URL: /hello
+Client IP: 10.0.2.2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 158
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 51
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-11-06 17:04:14 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/Debugger.php:856) in [/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 152]
+Request URL: /hello
+Client IP: 10.0.2.2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 158
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 152
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 57
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-11-06 17:04:14 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/Debugger.php:856) in [/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 185]
+Request URL: /hello
+Client IP: 10.0.2.2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 158
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 185
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-11-06 17:04:14 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/Debugger.php:856) in [/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 185]
+Request URL: /hello
+Client IP: 10.0.2.2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 158
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 185
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-11-06 17:04:18 Warning: Warning (512): Unable to emit headers. Headers sent in file=/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=856 in [/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 51]
+Request URL: /hello
+Client IP: 10.0.2.2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 158
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 51
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-11-06 17:04:18 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/Debugger.php:856) in [/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 152]
+Request URL: /hello
+Client IP: 10.0.2.2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 158
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 152
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 57
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-11-06 17:04:18 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/Debugger.php:856) in [/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 185]
+Request URL: /hello
+Client IP: 10.0.2.2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 158
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 185
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-11-06 17:04:18 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/Debugger.php:856) in [/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 185]
+Request URL: /hello
+Client IP: 10.0.2.2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 158
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 185
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-11-06 17:05:01 Error: [Cake\Http\Exception\InvalidCsrfTokenException] CSRF token mismatch. (/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:231)
+#0 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(151): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(121): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /usr/share/nginx/html/mycakeapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /usr/share/nginx/html/mycakeapp/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /mycakeapp/hello/form
+Referer URL: http://localhost:8080/hello
+
+
+2019-11-06 17:05:10 Warning: Warning (512): Unable to emit headers. Headers sent in file=/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=856 in [/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 51]
+Request URL: /hello
+Client IP: 10.0.2.2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 158
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 51
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-11-06 17:05:10 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/Debugger.php:856) in [/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 152]
+Request URL: /hello
+Client IP: 10.0.2.2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 158
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 152
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 57
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-11-06 17:05:10 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/Debugger.php:856) in [/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 185]
+Request URL: /hello
+Client IP: 10.0.2.2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 158
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 185
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-11-06 17:05:10 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/Debugger.php:856) in [/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 185]
+Request URL: /hello
+Client IP: 10.0.2.2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 158
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 185
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-11-06 17:06:30 Warning: Warning (2): Declaration of App\Controller\HelloController::beforeFilter(App\Controller\Event $event) should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [/usr/share/nginx/html/mycakeapp/src/Controller/HelloController.php, line 7]
+Request URL: /hello
+Client IP: 10.0.2.2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 158
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 42
+include - APP/Controller/HelloController.php, line 7
+Composer\Autoload\includeFile - ROOT/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() - ROOT/vendor/composer/ClassLoader.php, line 322
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+Cake\Core\App::_classExistsInBase() - CORE/src/Core/App.php, line 151
+Cake\Core\App::className() - CORE/src/Core/App.php, line 63
+Cake\Http\ControllerFactory::getControllerClass() - CORE/src/Http/ControllerFactory.php, line 92
+Cake\Http\ControllerFactory::create() - CORE/src/Http/ControllerFactory.php, line 37
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 91
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 234
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE/src/Http/Middleware/CsrfProtectionMiddleware.php, line 123
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 168
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 96
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 97
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-11-06 17:06:30 Error: [TypeError] Argument 1 passed to App\Controller\HelloController::beforeFilter() must be an instance of App\Controller\Event, instance of Cake\Event\Event given, called in /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Event/EventManager.php on line 352 (/usr/share/nginx/html/mycakeapp/src/Controller/HelloController.php:33)
+#0 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Event/EventManager.php(352): App\Controller\HelloController->beforeFilter(Object(Cake\Event\Event))
+#1 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Event/EventManager.php(329): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#2 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(113): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#3 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Controller/Controller.php(676): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#4 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#5 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\HelloController))
+#6 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(234): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /usr/share/nginx/html/mycakeapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /usr/share/nginx/html/mycakeapp/webroot/index.php(40): Cake\Http\Server->run()
+#23 {main}
+Request URL: /hello
+
+
+2019-11-06 17:07:08 Warning: Warning (512): Unable to emit headers. Headers sent in file=/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/Debugger.php line=856 in [/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 51]
+Request URL: /hello
+Client IP: 10.0.2.2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 158
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 51
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-11-06 17:07:08 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/Debugger.php:856) in [/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 152]
+Request URL: /hello
+Client IP: 10.0.2.2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 158
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 152
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 57
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-11-06 17:07:08 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/Debugger.php:856) in [/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 185]
+Request URL: /hello
+Client IP: 10.0.2.2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 158
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 185
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-11-06 17:07:08 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/Debugger.php:856) in [/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 185]
+Request URL: /hello
+Client IP: 10.0.2.2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 158
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 185
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-11-06 17:53:33 Error: [Cake\View\Exception\MissingHelperException] Helper class FromHelper could not be found. (/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/View/HelperRegistry.php:126)
+Exception Attributes: array (
+  'class' => 'FromHelper',
+  'plugin' => NULL,
+)
+#0 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(94): Cake\View\HelperRegistry->_throwMissingClassError('From', NULL)
+#1 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/View/HelperRegistry.php(66): Cake\Core\ObjectRegistry->load('From')
+#2 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/View/View.php(1198): Cake\View\HelperRegistry->__isset('From')
+#3 /usr/share/nginx/html/mycakeapp/src/Template/Hello/index.ctp(39): Cake\View\View->__get('From')
+#4 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/View/View.php(1418): include('/usr/share/ngin...')
+#5 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/View/View.php(1379): Cake\View\View->_evaluate('/usr/share/ngin...', Array)
+#6 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/View/View.php(879): Cake\View\View->_render('/usr/share/ngin...')
+#7 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Controller/Controller.php(795): Cake\View\View->render(NULL, NULL)
+#8 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#9 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\HelloController))
+#10 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(234): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /usr/share/nginx/html/mycakeapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 /usr/share/nginx/html/mycakeapp/webroot/index.php(40): Cake\Http\Server->run()
+#27 {main}
+Request URL: /hello
+
+
+2019-11-06 17:57:07 Error: [Cake\View\Exception\MissingHelperException] Helper class FromHelper could not be found. (/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/View/HelperRegistry.php:126)
+Exception Attributes: array (
+  'class' => 'FromHelper',
+  'plugin' => NULL,
+)
+#0 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(94): Cake\View\HelperRegistry->_throwMissingClassError('From', NULL)
+#1 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/View/HelperRegistry.php(66): Cake\Core\ObjectRegistry->load('From')
+#2 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/View/View.php(1198): Cake\View\HelperRegistry->__isset('From')
+#3 /usr/share/nginx/html/mycakeapp/src/Template/Hello/index.ctp(39): Cake\View\View->__get('From')
+#4 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/View/View.php(1418): include('/usr/share/ngin...')
+#5 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/View/View.php(1379): Cake\View\View->_evaluate('/usr/share/ngin...', Array)
+#6 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/View/View.php(879): Cake\View\View->_render('/usr/share/ngin...')
+#7 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Controller/Controller.php(795): Cake\View\View->render(NULL, NULL)
+#8 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#9 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\HelloController))
+#10 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(234): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /usr/share/nginx/html/mycakeapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 /usr/share/nginx/html/mycakeapp/webroot/index.php(40): Cake\Http\Server->run()
+#27 {main}
+Request URL: /hello
+
+
+2019-11-06 18:02:34 Error: [Cake\View\Exception\MissingHelperException] Helper class FromHelper could not be found. (/usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/View/HelperRegistry.php:126)
+Exception Attributes: array (
+  'class' => 'FromHelper',
+  'plugin' => NULL,
+)
+#0 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(94): Cake\View\HelperRegistry->_throwMissingClassError('From', NULL)
+#1 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/View/HelperRegistry.php(66): Cake\Core\ObjectRegistry->load('From')
+#2 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/View/View.php(1198): Cake\View\HelperRegistry->__isset('From')
+#3 /usr/share/nginx/html/mycakeapp/src/Template/Hello/index.ctp(39): Cake\View\View->__get('From')
+#4 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/View/View.php(1418): include('/usr/share/ngin...')
+#5 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/View/View.php(1379): Cake\View\View->_evaluate('/usr/share/ngin...', Array)
+#6 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/View/View.php(879): Cake\View\View->_render('/usr/share/ngin...')
+#7 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Controller/Controller.php(795): Cake\View\View->render(NULL, NULL)
+#8 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#9 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\HelloController))
+#10 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(234): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /usr/share/nginx/html/mycakeapp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /usr/share/nginx/html/mycakeapp/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 /usr/share/nginx/html/mycakeapp/webroot/index.php(40): Cake\Http\Server->run()
+#27 {main}
+Request URL: /hello
+
+
