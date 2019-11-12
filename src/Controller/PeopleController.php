@@ -8,8 +8,17 @@ class PeopleController extends AppController
 
     public function index()
     {
-        $data = $this->People->find('all');
-        $this->set('data', $data);
+        if ($this->request->isPost()) {
+            $find = $this->request->data['People']['find'];
+            $condition = ['limit' => 3, 'page' => $find];
+            $data = $this->People->find('all', $condition);
+        } else {
+            $data = $this->People->find(
+                'all',
+                ['order' => ['People.age' => 'asc']]
+            );
+        }
+            $this->set('data', $data);
     }
 
     public function edit()

@@ -1,0 +1,15 @@
+.github/
+.vscode/
+bin/
+config/
+logs/
+plugins/
+tests/
+tmp/
+vendor/
+.editorconfig
+.htaccess
+.travis.yml
+composer.json
+composer.lock
+phpunit.xml.dist
