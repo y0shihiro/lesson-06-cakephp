@@ -10,9 +10,11 @@ class PeopleController extends AppController
     {
         if ($this->request->isPost()) {
             $find = $this->request->data['People']['find'];
-            $data = $this->People->find('me', ['me' => $find]);
+            $data = $this->People->find('me', ['me' => $find])
+            ->contain(['Messages']);
         } else {
-            $data = $this->People->find('byAge');
+            $data = $this->People->find('byAge')
+            ->contain(['Messages']);
         }
             $this->set('data', $data);
     }
@@ -52,16 +54,16 @@ class PeopleController extends AppController
             $this->set('entity', $entity);
     }
 
-    public function create()
-    {
-        if ($this->request->is('post')) {
-            $data = $this->request->data['People'];
-            $entity = $this->People->newEntity($data);
-            $this->People->save($entity);
-        }
+    // public function create()
+    // {
+    //     if ($this->request->is('post')) {
+    //         $data = $this->request->data['People'];
+    //         $entity = $this->People->newEntity($data);
+    //         $this->People->save($entity);
+    //     }
 
-        return $this->redirect(['action' => 'index']);
-    }
+    //     return $this->redirect(['action' => 'index']);
+    // }
 
     public function delete()
     {
