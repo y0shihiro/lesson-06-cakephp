@@ -49,7 +49,10 @@ class Application extends BaseApplication
             $this->addPlugin(\DebugKit\Plugin::class);
         }
 
-        // Load more plugins here
+          // Load more plugins here
+
+            //migration追加
+            $this->addPlugin('Migrations');
     }
 
     /**
